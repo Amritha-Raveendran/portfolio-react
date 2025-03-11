@@ -28,6 +28,7 @@ function About() {
                 I come from Pathanamthitta, and I aspire to grow in the tech industry while continuing to embrace my artistic passions.</p>
 
                 <Link className="position-absolute bottom-0 end-0 text-white m-5" to={'/skills'} style={{textDecoration:"none",textAlign:'right'}}><h4 className=' mt-3 text-white'>Next Page <FontAwesomeIcon icon={faArrowRight} fade style={{color: "#ffffff",}} /> </h4></Link>
+                
               </div>
             </div>
             
