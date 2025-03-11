@@ -61,7 +61,7 @@ function Contacts() {
                     </Button>
                   </Form>
                 </Col>
-                <Col md={6} className="text-center d-flex flex-column justify-content-center mt-4">
+                <Col md={6} className="text-center d-flex flex-column justify-content-center mt-2">
                   <h4>Connect with me</h4>
                   <div className="d-flex justify-content-center gap-3 mt-3">
                     <a href="https://www.linkedin.com/in/amritharaveendran/" target="_blank" rel="noopener noreferrer">
