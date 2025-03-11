@@ -37,7 +37,7 @@ function Landing() {
 
                     </div>
                     <div className="col-md-6 d-flex justify-content-center align-items-center mt-lg-5" >
-                        <img src="./public/profile.jpg" alt="" className='w-50 border rounded-5' />
+                        <img src="/profile.jpg" alt="no image" className='w-50 border rounded-5' />
                     </div>
 
                 </div>
