@@ -1,4 +1,4 @@
-import { faArrowRight, faInfinity } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowRight, faInfinity } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import Card from 'react-bootstrap/Card';
@@ -175,7 +175,10 @@ function Projects() {
 
         </div>
 
-        <Link className="position-absolute bottom-0 end-0 text-white m-5" to={'/contacts'} style={{textDecoration:"none",textAlign:'right'}}><h4 className=' mt-3 text-white'>Next Page <FontAwesomeIcon icon={faArrowRight} fade style={{color: "#ffffff",}} /> </h4></Link>
+        <div className="conatiner-fluid d-flex justify-content-end">
+        <Link className=" text-center text-white m-5 " to={'/skills'} style={{textDecoration:"none",textAlign:'right'}}><h4 className=' mt-3 text-white'> <FontAwesomeIcon icon={faArrowLeft} fade style={{color: "#ffffff",}} /> Back </h4></Link>
+        <Link className=" text-center text-white m-5 " to={'/contacts'} style={{textDecoration:"none",textAlign:'right'}}><h4 className=' mt-3 text-white'>Next Page <FontAwesomeIcon icon={faArrowRight} fade style={{color: "#ffffff",}} /> </h4></Link>
+        </div>
       </div>
 
     </>

@@ -1,10 +1,8 @@
-import { faArrowLeft, faArrowRight, faInfinity } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft,  faInfinity } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Button, Col, Container, Form, Row } from 'react-bootstrap'
-import { Bounce, toast } from 'react-toastify'
-
-import { ToastContainer } from 'react-toastify';
+import { Bounce, toast ,ToastContainer} from 'react-toastify'
 import { faGithub, faLinkedin, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
@@ -16,14 +14,16 @@ function Contacts() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const handlbutton = () => {
-    toast.warning("Please Fill the form ...")
+
+  const handlebutton = () => {
+    // toast.warning("Please Fill the form ...")
+    alert("Please Fill the form ...")
   }
 
   return (
     <>
       <ToastContainer
-        position='top-left'
+        position='top-center'
         autoClose={3000}
         theme="light"
         transition={Bounce}
@@ -56,12 +56,12 @@ function Contacts() {
                       <Form.Label>Message</Form.Label>
                       <Form.Control as="textarea" rows={4} placeholder="Your message" />
                     </Form.Group>
-                    <Button onClick={handlbutton} className='form-control mt-2' variant="primary" type="submit">
+                    <Button onClick={handlebutton} className='form-control mt-2' variant="primary" type="submit">
                       Send Message
                     </Button>
                   </Form>
                 </Col>
-                <Col md={6} className="text-center d-flex flex-column justify-content-center">
+                <Col md={6} className="text-center d-flex flex-column justify-content-center mt-4">
                   <h4>Connect with me</h4>
                   <div className="d-flex justify-content-center gap-3 mt-3">
                     <a href="https://www.linkedin.com/in/amritharaveendran/" target="_blank" rel="noopener noreferrer">
@@ -84,13 +84,11 @@ function Contacts() {
 
 
                   {/* MODAL */}
-                  <Modal show={show} onHide={handleClose} size='lg'>
-                    <Modal.Header closeButton>
-
-                    </Modal.Header>
-                    <Modal.Body className='text-center'>Thank you , for visiting.</Modal.Body>
+                  <Modal show={show} onHide={handleClose} centered size='lg' className='body-black'>
+                    
+                    <Modal.Body className='text-center text-light' style={{fontSize:"30px"}} >Thank you , for visiting.</Modal.Body>
                     <Modal.Footer>
-                      <Button variant="secondary" onClick={handleClose}>
+                      <Button variant="primary" onClick={handleClose}>
                         Close
                       </Button>
 

@@ -1,0 +1,10 @@
+.custom-margin {
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 992px) { 
+    .custom-margin {
+      margin-top: 200px;
+    }
+  }
+  
